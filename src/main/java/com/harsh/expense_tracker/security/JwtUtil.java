@@ -12,8 +12,8 @@ import java.util.function.Function;
 @Component
 public class JwtUtil {
 
-    private final String SECRET_KEY = "abdevilliersisthegreatestbatterthatplayedforsouthafrica17"; // TODO: keep in env var
-    private final long EXPIRATION_TIME = 1000 * 60 * 60; // 1 hour
+    private final String SECRET_KEY = "your key"; 
+    private final long EXPIRATION_TIME = 1000 * 60 * 60; 
 
     public String extractUsername(String token) {
         return extractClaim(token, Claims::getSubject);
